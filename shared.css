@@ -25,7 +25,7 @@ body {
     top: 0;
     left: 0;
     z-index: 1;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
 }
 
 .main-header > div {
@@ -37,9 +37,9 @@ body {
     color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 1.375rem;
     display: inline-block;
-    height: 22px;
+    height: 1.375rem;;
 }
 
 .main-header__brand img {
@@ -62,14 +62,14 @@ body {
 
 .main-nav__item {
     display: inline-block;
-    margin: 0 16px;
+    margin: 0 1rem;
 }
 
 .main-nav__item a {
     text-decoration: none;
     color: #0e4f1f;
     font-weight: bold;
-    padding: 3px 0;
+    padding: 0.18rem 0;
 }
 
 .main-nav__item a:hover, 
@@ -81,7 +81,7 @@ body {
 .main-nav__item--cta a{
     color: white;
     background: #ff1b68;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     border-radius: 8px;
 }
 
@@ -94,8 +94,8 @@ body {
 
 .main-footer {
     background: black;
-    padding: 32px;
-    margin-top: 48px;
+    padding: 2rem;
+    margin-top: 3.42rem;
 }
 
 .main-footer__links {
@@ -107,7 +107,7 @@ body {
 
 .main-footer__link {
     display: inline-block;
-    margin: 0 16px;
+    margin: 0 1rem;
 }
 
 .main-footer__link a {
@@ -125,7 +125,7 @@ body {
     color: white;
     font: inherit;
     border: 1px solid #0e4f1f;
-    padding: 8px;
+    padding: 0.5rem;
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
