@@ -7,24 +7,24 @@ let mobileNav = document.querySelector('.mobile-nav')
 
 for (let i = 0; i < selectPlanButton.length; i++) {
     selectPlanButton[i].addEventListener('click', () => {
-        modal.style.display = 'block'
-        backdrop.style.display = 'block'
+        modal.classList.add('open')
+        backdrop.classList.add('open')
     })
 }
 
 backdrop.addEventListener('click', () => {
-    mobileNav.style.display = 'none'
+    mobileNav.classList.remove('open')
     closeModal()
 })
 
 modalNoButton.addEventListener('click', closeModal)
 
 function closeModal() {
-    backdrop.style.display = 'none'
-    modal.style.display = 'none'
+    modal.classList.remove('open')
+    backdrop.classList.remove('open')
 }
 
 toggleButton.addEventListener('click', () => {
-    mobileNav.style.display = 'block'
-    backdrop.style.display = 'block'
+    mobileNav.classList.add('open')
+    backdrop.classList.add('open')
 })
