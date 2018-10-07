@@ -17,10 +17,15 @@ backdrop.addEventListener('click', () => {
     closeModal()
 })
 
-modalNoButton.addEventListener('click', closeModal)
+
+if (modalNoButton) {
+    modalNoButton.addEventListener('click', closeModal)
+}
 
 function closeModal() {
-    modal.classList.remove('open')
+    if (modalNoButton) {
+        modal.classList.remove('open')
+    }
     backdrop.classList.remove('open')
 }
 
