@@ -7,6 +7,11 @@ body {
     margin: 0;
 }
 
+main {
+    min-height: calc(100vh - 3.5rem - 8rem);
+    margin-top: 3.5rem;
+}
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -55,14 +60,6 @@ body {
     width: calc(100% - 122px); */
 }
 
-@media (min-width: 40rem) {
-    .main-nav {
-        vertical-align: middle;
-        display: inline-block;
-        text-align: right;
-        width: calc(100% - 122px);
-    }
-}
 
 .main-nav__items {
     margin: 0;
@@ -191,13 +188,6 @@ body {
     vertical-align: middle;
 }
 
-
-@media (min-width: 40rem) {
-    .toggle-button  {
-        display: none;
-    }
-}
-
 .toggle-button:focus {
     outline: none;
 }
@@ -264,4 +254,19 @@ body {
 
 .open {
     display: block;
+}
+
+
+
+@media (min-width: 40rem) {
+    .main-nav {
+        vertical-align: middle;
+        display: inline-block;
+        text-align: right;
+        width: calc(100% - 44px);
+    }
+
+    .toggle-button  {
+        display: none;
+    }
 }
