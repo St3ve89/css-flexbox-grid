@@ -29,9 +29,10 @@ main {
 .signup-form input[id*="terms"] + label {
     display: inline-block;
     width: auto;
+    vertical-align: bottom;
 }
 
-.signup-form input,
+.signup-form input:not([type="checkbox"]),
 .signup-form select {
     border: 1px solid #ccc;
     padding: .2rem .5rem;
@@ -48,6 +49,21 @@ main {
 .signup-form button[type="submit"] {
     display: block;
     margin: 1rem;
+}
+
+.signup-form input[type="checkbox"] {
+    border: 1px solid #ccc;
+    background: white;
+    width: 1rem;
+    height: 1rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.signup-form input[type="checkbox"]:checked {
+    background: #2ddf5c;
+    border: #0e4f1f;
 }
 
 
