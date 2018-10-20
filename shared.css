@@ -110,15 +110,16 @@ main {
 }
 
 .main-footer__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     list-style: none;
-    text-align: center;
     margin: 0;
     padding: 0;
 }
 
 .main-footer__link {
-    display: inline-block;
-    margin: 0 1rem;
+    margin: 0.5rem 0;
 }
 
 .main-footer__link a {
@@ -273,14 +274,19 @@ main {
 
 @media (min-width: 40rem) {
     .main-nav {
-        /* vertical-align: middle;
-        display: inline-block;
-        text-align: right;
-        width: calc(100% - 44px); */
         display: flex;
     }
 
     .toggle-button  {
         display: none;
+    }
+
+    .main-footer__links {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .main-footer__link {
+        margin: 0 1rem;
     }
 }
