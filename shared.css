@@ -35,24 +35,20 @@ main {
     left: 0;
     z-index: 1;
     padding: 0.5rem 1rem;
-}
-
-.main-header > div {
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .main-header__brand {
     color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
-    display: inline-block;
-    height: 2.5rem;
-    vertical-align: middle;
 }
 
 .main-header__brand img {
     height: 2.5rem;
+    vertical-align: middle;
 }
 
 
@@ -69,10 +65,10 @@ main {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
 }
 
 .main-nav__item {
-    display: inline-block;
     margin: 0 1rem;
 }
 
@@ -274,10 +270,11 @@ main {
 
 @media (min-width: 40rem) {
     .main-nav {
-        vertical-align: middle;
+        /* vertical-align: middle;
         display: inline-block;
         text-align: right;
-        width: calc(100% - 44px);
+        width: calc(100% - 44px); */
+        display: flex;
     }
 
     .toggle-button  {
